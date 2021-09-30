@@ -2,7 +2,7 @@
 
 /* --------------------------Header------------------------------ */
 header {
-  margin: 1.5rem 3rem;
+  margin: 1.5rem 4%;
 }
 
 .head img {
@@ -10,13 +10,15 @@ header {
 }
 
 header .btn {
+  line-height: 1.5;
   font-size: 18px;
-  line-height: 26px;
   font-weight: 600;
   border-radius: 20px;
   border: none;
   cursor: pointer;
   float: right;
+  position: relative;
+  bottom: 7px;
 }
 
 .sign-up-btn {
@@ -158,7 +160,7 @@ border-radius: 12px;
   padding: 18px;
   text-align: left;
   outline: none;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 400;
   transition: 0.4s;
   margin-left: 20%;
@@ -197,7 +199,7 @@ border-radius: 12px;
 }
 
 
-/* --------------------------Department------------------------------ */
+/* --------------------------Department Web------------------------------ */
 
 .dept-web{
   width: 80%;
@@ -210,19 +212,99 @@ border-radius: 12px;
 .dept h6{
   display: inline-block;
 }
+
+.dept{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
 .app-icon{
-  margin-left: 34px;
+  margin-left: 18px;
 }
 .app-adv{
-
-}
-.dept{
-  display: inline-block;
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-left: 2.5%;
 }
 
-@media screen and (max-width: 1030px) and (min-width: 650px) {
+
+/* --------------------------Department I-pad & Mobile------------------------------ */
+
+
+
+.dept-mob{
+  display: none;
+}
+
+
+/* -------------------------Footer------------------------------ */
+
+footer{
+  width: 80%;
+  margin-left: 10%;
+}
+.row p{
+  font-weight: 500;
+}
+.disclamer{
+  margin-left: 6%;
+  margin-right: 6%;
+  font-size: 12px;
+  color: #444;
+}
+.social-media{
+  margin-left: auto;
+
+}
+.row{
+  margin-left: 5%;
+}
+
+.lgl{
+  margin-right: 15%;
+  float: left;
+  font-weight: 500;
+}
+@media screen and (max-width: 1250px) and (min-width: 900px){
+
+  /* --------------------------Department I-pad & Mobile------------------------------ */
+
+   .dept-web{
+      display: none;
+   }
+   .dept-mob{
+     display: block;
+     width: 90%;
+     margin-left: 5%;
+     text-align: center;
+   }
+   .m-app-adv{
+     float: left;
+   }
+   .accordion-button{
+     font-weight: 500;
+   }
+   .dept-mob img, .dept-mob h6{
+     display: inline-block;
+   }
+    .dept-mob h6{
+      margin-right: 18px;
+    }
+
+    .accordion-body{
+      font-size: 16px;
+    }
+   .accordion-flush{
+     margin-left: 30%;
+     position: relative;
+     bottom: 30px;
+   }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 650px) {
   .content {
     width: 100%;
     top: 50%;
@@ -284,6 +366,29 @@ border-radius: 12px;
   border-radius: 12px;
   }
 
+  .dept-web{
+     display: none;
+  }
+  .dept-mob{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .accordion-button{
+    font-weight: 500;
+  }
+  .dept-mob img, .dept-mob h6{
+    display: inline-block;
+  }
+   .dept-mob h6{
+     margin-right: 18px;
+   }
+
+   .accordion-body{
+     font-size: 16px;
+   }
 
 }
 
@@ -358,4 +463,27 @@ border-radius: 12px;
   .app-icon{
     padding-bottom: 50px;
   }
+  .dept-mob{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .dept-web{
+     display: none;
+  }
+  .accordion-button{
+    font-weight: 500;
+  }
+  .dept-mob img, .dept-mob h6{
+    display: inline-block;
+  }
+   .dept-mob h6{
+     margin-right: 18px;
+   }
+
+   .accordion-body{
+     font-size: 16px;
+   }
 }
